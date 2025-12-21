@@ -10,13 +10,14 @@ const Services = () => {
   };
 
   const ServiceCard = ({ icon, title, index, services }) => (
-    <div className="relative border border-black/10 bg-white dark:bg-gray-800 p-6 pt-24">
-      <div>
+    <div className="relative border border-black/10 bg-white dark:bg-gray-800 p-6 pt-24 w-70 rounded-md">
+      <div className="">
         <i
           className={`uil ${icon} block text-[2rem] text-gray-900 dark:text-white mb-4`}
         ></i>
         <h3 className="text-lg font-medium mb-4">
-          {title.split(" ")[0]} <br /> {title.split(" ")[1]}
+          {title.split(" ")[0]} <br />{" "}
+          {title.split(" ")[1] || title.split(" ")[2]}
         </h3>
       </div>
 
@@ -41,8 +42,8 @@ const Services = () => {
 
           <h3 className="text-center text-lg font-medium mb-4">{title}</h3>
           <p className="text-center text-sm px-14 mb-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            dolorem laboriosam minima vero?
+            Specialized in building robust and scalable solutions with modern
+            technologies
           </p>
 
           <ul className="grid gap-3">
@@ -58,12 +59,40 @@ const Services = () => {
     </div>
   );
 
-  const servicesList = [
-    "I develop the User Interface",
-    "I develop the Web page",
-    "I develop the User UX elemet",
-    "I desgin mockup",
-    "I position your comapny mockup",
+  const servicesData = [
+    {
+      icon: "uil-browser",
+      title: "Frontend Development",
+      services: [
+        "Build responsive and interactive user interfaces with React.js and Next.js",
+        "Implement state management using Redux, Context API, and Zustand",
+        "Create reusable components with modern CSS frameworks (Tailwind CSS, Material-UI)",
+        "Optimize performance with code splitting, lazy loading, and SEO best practices",
+        "Develop cross-browser compatible applications with pixel-perfect designs",
+      ],
+    },
+    {
+      icon: "uil-server",
+      title: "Backend Development",
+      services: [
+        "Design and develop RESTful APIs and GraphQL services with Node.js and Express.js",
+        "Implement secure authentication and authorization using JWT and OAuth",
+        "Build scalable microservices architecture with proper error handling",
+        "Integrate third-party APIs and payment gateways (Stripe, PayPal)",
+        "Optimize server performance with caching strategies and load balancing",
+      ],
+    },
+    {
+      icon: "uil-database",
+      title: "Database  DevOps",
+      services: [
+        "Design and optimize MongoDB schemas with aggregation pipelines and indexing",
+        "Work with SQL databases (PostgreSQL, MySQL) for relational data modeling",
+        "Implement database migrations, backups, and disaster recovery strategies",
+        "Deploy applications on cloud platforms (AWS, Vercel, Netlify, Heroku)",
+        "Set up CI/CD pipelines, Docker containerization, and monitoring tools",
+      ],
+    },
   ];
 
   return (
@@ -72,31 +101,20 @@ const Services = () => {
         Services
       </h2>
       <span className="block text-center text-sm text-gray-600 dark:text-gray-400 mb-16">
-        What i offers
+        What I Offer as a MERN Stack Developer
       </span>
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 justify-items-center max-w-225 mx-auto">
-          <ServiceCard
-            icon="uil-web-grid"
-            title="Product Designer"
-            index={1}
-            services={servicesList}
-          />
-
-          <ServiceCard
-            icon="uil-arrow"
-            title="UI/UX Designer"
-            index={2}
-            services={servicesList}
-          />
-
-          <ServiceCard
-            icon="uil-edit"
-            title="Visual Designer"
-            index={3}
-            services={servicesList}
-          />
+          {servicesData.map((service, index) => (
+            <ServiceCard
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              index={index + 1}
+              services={service.services}
+            />
+          ))}
         </div>
       </div>
     </section>
