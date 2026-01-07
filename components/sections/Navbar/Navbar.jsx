@@ -30,7 +30,7 @@ const Navbar = () => {
           href="index.html"
           className="text-[hsl(0,0%,20%)] font-medium text-[1rem]"
         >
-          itzMuzu
+          Muzammil.
         </a>
 
         <div

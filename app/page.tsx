@@ -8,7 +8,7 @@ import Qualification from "@/components/sections/Qualification/Qualificaion";
 import Testimonial from "@/components/sections/Testimonial/Testimonial";
 import Contact from "@/components/sections/Contact/Contact";
 import Footer from "@/components/sections/Footer/Footer";
-
+import Projects from "@/components/sections/Projects/Projects.jsx";
 const page = () => {
   return (
     <div>
@@ -16,6 +16,7 @@ const page = () => {
       <Home />
       <About />
       <Skill />
+      <Projects />
       <Services />
       <Qualification />
       <Testimonial />

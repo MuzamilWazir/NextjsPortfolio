@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-white dark:bg-gray-800 border-t border-black/10 dark:border-gray-700">
       <div className="container mx-auto px-4 py-8 pb-24">
         <h1 className="text-center text-2xl font-semibold text-gray-900 dark:text-white mb-8">
-          itzmuzu
+          Muzammil.
         </h1>
 
         <ul className="flex justify-center gap-6 mb-8">
