@@ -94,6 +94,20 @@ function Projects() {
         "Modern UI",
       ],
     },
+     {
+      id: 6,
+      title: "Madeinrawanda Webiste -For Goverment of Rwanda",
+      description:
+        "It is goverment webiste where people can add and remove their product and register in rwanda country",
+      image: "/madeinrwanda.png",
+      link: "https://github.com/MuzamilWazir/madeinrewandawebsitefrontend",
+      github: "https://github.com/mehditechnologies/top-ai-tools-hub",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+      ],
+    },
   ];
 
   return (
