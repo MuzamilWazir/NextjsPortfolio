@@ -31,7 +31,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${poppins.variable} font-sans bg-[hsl(0,0%,98%)] text-[hsl(0,0%,46%)] text-[1rem]`}
+        className={`${poppins.variable} font-sans bg-gray-50 dark:bg-black text-gray-700 dark:text-white text-[1rem]`}
       >
         {children}
       </body>

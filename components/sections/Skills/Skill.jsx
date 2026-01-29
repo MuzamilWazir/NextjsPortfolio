@@ -23,7 +23,7 @@ const Skill = () => {
 
 const Frontend = () => {
   return (
-    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 lg:p-10">
+    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 lg:p-10">
       <h3 className="text-xl font-medium text-gray-800 dark:text-gray-100 text-center mb-6">
         Frontend Developer
       </h3>
@@ -47,7 +47,7 @@ const Frontend = () => {
 
 const Backend = () => {
   return (
-    <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 lg:p-10">
+    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 lg:p-10">
       <h3 className="text-xl font-medium text-gray-800 dark:text-gray-100 text-center mb-6">
         Backend Developer
       </h3>

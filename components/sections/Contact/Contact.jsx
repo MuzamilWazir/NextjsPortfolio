@@ -44,7 +44,7 @@ const Contact = () => {
             </h3>
             <div className="grid gap-6">
               {/* Email Card */}
-              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
+              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
                 <i className="bx bx-mail-send text-4xl text-gray-900 dark:text-white mb-1 block"></i>
                 <h3 className="text-base font-medium mb-1 text-gray-900 dark:text-white">
                   Email
@@ -62,7 +62,7 @@ const Contact = () => {
               </div>
 
     
-              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
+              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
                 <i className="bx bxl-whatsapp text-4xl text-gray-900 dark:text-white mb-1 block"></i>
                 <h3 className="text-base font-medium mb-1 text-gray-900 dark:text-white">
                   Whatapp
@@ -81,7 +81,7 @@ const Contact = () => {
                 </a>
               </div>
 
-              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
+              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
                 <i className="bx bxl-messenger text-4xl text-gray-900 dark:text-white mb-1 block"></i>
                 <h3 className="text-base font-medium mb-1 text-gray-900 dark:text-white">
                   Messenger

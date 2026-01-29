@@ -75,7 +75,7 @@ function Testimonial() {
           {Data.map(({ id, image, title, role, description }) => {
             return (
               <SwiperSlide key={id}>
-                <div className="bg-white dark:bg-gray-800 border border-black/10 dark:border-gray-700 p-6 md:p-8 rounded-3xl mb-12">
+                <div className="bg-white dark:bg-gray-900 border border-black/10 dark:border-gray-700 p-6 md:p-8 rounded-3xl mb-12">
                   <img
                     src={image}
                     alt={title}

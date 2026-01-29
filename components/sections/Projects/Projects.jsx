@@ -123,7 +123,7 @@ function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
           >
             <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-900">
               <Image

@@ -10,7 +10,7 @@ const Services = () => {
   };
 
   const ServiceCard = ({ icon, title, index, services }) => (
-    <div className="relative border border-black/10 bg-white dark:bg-gray-800 p-6 pt-24 w-70 rounded-md">
+    <div className="relative border border-black/10 bg-white dark:bg-gray-900 p-6 pt-24 w-70 rounded-md">
       <div className="">
         <i
           className={`uil ${icon} block text-[2rem] text-gray-900 dark:text-white mb-4`}
@@ -34,7 +34,7 @@ const Services = () => {
           toggleState === index ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <div className="w-full max-w-125 relative bg-white dark:bg-gray-800 py-18 px-10 rounded-3xl">
+        <div className="w-full max-w-125 relative bg-white dark:bg-gray-900 py-18 px-10 rounded-3xl">
           <i
             className="uil uil-times absolute top-6 right-6 text-2xl text-gray-900 dark:text-white cursor-pointer"
             onClick={() => toggleTab(0)}
