@@ -31,7 +31,7 @@ const Contact = () => {
       <h2 className="text-center text-3xl md:text-4xl font-semibold mb-2">
         Get In Touch
       </h2>
-      <span className="block text-center text-sm text-gray-600 dark:text-gray-400 mb-16">
+      <span className="block text-center text-sm text-gray-600 mb-16">
         Contact Me
       </span>
 
@@ -39,22 +39,22 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 justify-items-center">
           {/* Left Side - Talk to me */}
           <div className="w-full max-w-md">
-            <h3 className="text-xl font-medium mb-8 text-gray-900 dark:text-white">
+            <h3 className="text-xl font-medium mb-8 text-gray-900">
               Talk to me
             </h3>
             <div className="grid gap-6">
               {/* Email Card */}
-              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
-                <i className="bx bx-mail-send text-4xl text-gray-900 dark:text-white mb-1 block"></i>
-                <h3 className="text-base font-medium mb-1 text-gray-900 dark:text-white">
+              <div className="bg-white border border-gray-200 rounded-2xl p-3 text-center">
+                <i className="bx bx-mail-send text-4xl text-gray-900 mb-1 block"></i>
+                <h3 className="text-base font-medium mb-1 text-gray-900">
                   Email
                 </h3>
-                <span className="block text-sm text-gray-600 dark:text-gray-400 mb-2">
+                <span className="block text-sm text-gray-600 mb-2">
                   itzmuzu@gmail.com
                 </span>
                 <a
                   href="mailto:itzmuzu@gmail.com"
-                  className="text-gray-700 dark:text-gray-300 text-sm inline-flex items-center gap-2 hover:gap-3 transition-all"
+                  className="text-gray-700 text-sm inline-flex items-center gap-2 hover:gap-3 transition-all"
                 >
                   Write me
                   <i className="bx bx-right-arrow-alt text-base"></i>
@@ -62,38 +62,38 @@ const Contact = () => {
               </div>
 
     
-              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
-                <i className="bx bxl-whatsapp text-4xl text-gray-900 dark:text-white mb-1 block"></i>
-                <h3 className="text-base font-medium mb-1 text-gray-900 dark:text-white">
+              <div className="bg-white border border-gray-200 rounded-2xl p-3 text-center">
+                <i className="bx bxl-whatsapp text-4xl text-gray-900 mb-1 block"></i>
+                <h3 className="text-base font-medium mb-1 text-gray-900">
                   Whatapp
                 </h3>
-                <span className="block text-sm text-gray-600 dark:text-gray-400 mb-2">
+                <span className="block text-sm text-gray-600 mb-2">
                   0347-8048455
                 </span>
                 <a
                   href="https://api.whatsapp.com/send?phone=923478048455&text=Hello, I would like to discuss a project!"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 dark:text-gray-300 text-sm inline-flex items-center gap-2 hover:gap-3 transition-all"
+                  className="text-gray-700 text-sm inline-flex items-center gap-2 hover:gap-3 transition-all"
                 >
                   Write me
                   <i className="bx bx-right-arrow-alt text-base"></i>
                 </a>
               </div>
 
-              <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-3 text-center">
-                <i className="bx bxl-messenger text-4xl text-gray-900 dark:text-white mb-1 block"></i>
-                <h3 className="text-base font-medium mb-1 text-gray-900 dark:text-white">
+              <div className="bg-white border border-gray-200 rounded-2xl p-3 text-center">
+                <i className="bx bxl-messenger text-4xl text-gray-900 mb-1 block"></i>
+                <h3 className="text-base font-medium mb-1 text-gray-900">
                   Messenger
                 </h3>
-                <span className="block text-sm text-gray-600 dark:text-gray-400 mb-2">
+                <span className="block text-sm text-gray-600 mb-2">
                   user.fb123
                 </span>
                 <a
                   href="https://m.me/yourprofile"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 dark:text-gray-300 text-sm inline-flex items-center gap-2 hover:gap-3 transition-all"
+                  className="text-gray-700 text-sm inline-flex items-center gap-2 hover:gap-3 transition-all"
                 >
                   Write me
                   <i className="bx bx-right-arrow-alt text-base"></i>
@@ -103,47 +103,47 @@ const Contact = () => {
           </div>
 
           <div className="w-full max-w-md">
-            <h3 className="text-xl font-medium mb-8 text-gray-900 dark:text-white">
+            <h3 className="text-xl font-medium mb-8 text-gray-900">
               Write me your Project
             </h3>
 
             <form ref={form} onSubmit={sendEmail} className="w-full">
               <div className="relative mb-8 h-16">
-                <label className="absolute -top-3 left-5 text-sm px-2 bg-[#fafafa] z-10 text-gray-700 dark:text-gray-300">
+                <label className="absolute -top-3 left-5 text-sm px-2 bg-[#fafafa] z-10 text-gray-700">
                   Name
                 </label>
                 <input
                   type="text"
                   name="name"
                   required
-                  className="absolute top-0 left-0 w-full h-full border-2 border-gray-300 dark:border-gray-600 bg-transparent text-gray-900 dark:text-white outline-none rounded-xl px-6 z-1 focus:border-gray-900 dark:focus:border-white transition-colors placeholder:text-gray-400"
+                  className="absolute top-0 left-0 w-full h-full border-2 border-gray-300 bg-transparent text-gray-900 outline-none rounded-xl px-6 z-1 focus:border-gray-900 transition-colors placeholder:text-gray-400"
                   placeholder="Insert your name"
                 />
               </div>
 
               {/* Email Field */}
               <div className="relative mb-8 h-16">
-                <label className="absolute -top-3 left-5 text-sm px-2 bg-[#fafafa] dark:bg-gray-900 z-10 text-gray-700 dark:text-gray-300">
+                <label className="absolute -top-3 left-5 text-sm px-2 bg-[#fafafa] z-10 text-gray-700">
                   Email
                 </label>
                 <input
                   type="email"
                   name="email"
                   required
-                  className="absolute top-0 left-0 w-full h-full border-2 border-gray-300 dark:border-gray-600 bg-transparent text-gray-900 dark:text-white outline-none rounded-xl px-6 z-1 focus:border-gray-900 dark:focus:border-white transition-colors placeholder:text-gray-400"
+                  className="absolute top-0 left-0 w-full h-full border-2 border-gray-300 bg-transparent text-gray-900 outline-none rounded-xl px-6 z-1 focus:border-gray-900 transition-colors placeholder:text-gray-400"
                   placeholder="Insert your Email"
                 />
               </div>
 
               {/* Project Field */}
               <div className="relative mb-8 h-44">
-                <label className="absolute -top-3 left-5 text-sm px-2 bg-[#fafafa] dark:bg-gray-900 z-10 text-gray-700 dark:text-gray-300">
+                <label className="absolute -top-3 left-5 text-sm px-2 bg-[#fafafa] z-10 text-gray-700">
                   Project
                 </label>
                 <textarea
                   name="project"
                   required
-                  className="absolute top-0 left-0 w-full h-full border-2 border-gray-300 dark:border-gray-600 bg-transparent text-gray-900 dark:text-white outline-none rounded-xl px-6 py-6 z-1 resize-none focus:border-gray-900 dark:focus:border-white transition-colors placeholder:text-gray-400"
+                  className="absolute top-0 left-0 w-full h-full border-2 border-gray-300 bg-transparent text-gray-900 outline-none rounded-xl px-6 py-6 z-1 resize-none focus:border-gray-900 transition-colors placeholder:text-gray-400"
                   placeholder="Write Your project"
                 ></textarea>
               </div>
@@ -151,7 +151,7 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="inline-flex items-center gap-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-4 rounded-2xl font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-2xl font-medium hover:bg-gray-800 transition-colors"
               >
                 Send Message
                 <svg

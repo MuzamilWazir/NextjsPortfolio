@@ -10,10 +10,10 @@ const Services = () => {
   };
 
   const ServiceCard = ({ icon, title, index, services }) => (
-    <div className="relative border border-black/10 bg-white dark:bg-gray-900 p-6 pt-24 w-70 rounded-md">
+    <div className="relative border border-black/10 bg-white p-6 pt-24 w-70 rounded-md">
       <div className="">
         <i
-          className={`uil ${icon} block text-[2rem] text-gray-900 dark:text-white mb-4`}
+          className={`uil ${icon} block text-[2rem] text-gray-900 mb-4`}
         ></i>
         <h3 className="text-lg font-medium mb-4">
           {title.split(" ")[0]} <br />{" "}
@@ -22,7 +22,7 @@ const Services = () => {
       </div>
 
       <span
-        className="text-gray-900 dark:text-white text-sm inline-flex items-center gap-1 cursor-pointer group"
+        className="text-gray-900 text-sm inline-flex items-center gap-1 cursor-pointer group"
         onClick={() => toggleTab(index)}
       >
         View More
@@ -34,9 +34,9 @@ const Services = () => {
           toggleState === index ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <div className="w-full max-w-125 relative bg-white dark:bg-gray-900 py-18 px-10 rounded-3xl">
+        <div className="w-full max-w-125 relative bg-white py-18 px-10 rounded-3xl">
           <i
-            className="uil uil-times absolute top-6 right-6 text-2xl text-gray-900 dark:text-white cursor-pointer"
+            className="uil uil-times absolute top-6 right-6 text-2xl text-gray-900 cursor-pointer"
             onClick={() => toggleTab(0)}
           ></i>
 
@@ -49,7 +49,7 @@ const Services = () => {
           <ul className="grid gap-3">
             {services.map((service, idx) => (
               <li key={idx} className="flex items-center gap-2">
-                <i className="uil uil-check-circle text-gray-900 dark:text-white text-[1.1rem]"></i>
+                <i className="uil uil-check-circle text-gray-900 text-[1.1rem]"></i>
                 <p className="text-sm">{service}</p>
               </li>
             ))}
@@ -100,7 +100,7 @@ const Services = () => {
       <h2 className="text-center text-3xl md:text-4xl font-semibold mb-2">
         Services
       </h2>
-      <span className="block text-center text-sm text-gray-600 dark:text-gray-400 mb-16">
+      <span className="block text-center text-sm text-gray-600 mb-16">
         What I Offer as a MERN Stack Developer
       </span>
 

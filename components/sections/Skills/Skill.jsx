@@ -6,10 +6,10 @@ const Skill = () => {
       className="pt-24 pb-12 md:pt-28 md:pb-16 lg:pt-32 lg:pb-20"
       id="skill"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 text-center mb-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-2">
         Skills
       </h2>
-      <span className="text-base text-gray-600 dark:text-gray-300 text-center block mb-12">
+      <span className="text-base text-gray-600 text-center block mb-12">
         My technical level
       </span>
 
@@ -23,8 +23,8 @@ const Skill = () => {
 
 const Frontend = () => {
   return (
-    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 lg:p-10">
-      <h3 className="text-xl font-medium text-gray-800 dark:text-gray-100 text-center mb-6">
+    <div className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10">
+      <h3 className="text-xl font-medium text-gray-800 text-center mb-6">
         Frontend Developer
       </h3>
 
@@ -47,8 +47,8 @@ const Frontend = () => {
 
 const Backend = () => {
   return (
-    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-8 lg:p-10">
-      <h3 className="text-xl font-medium text-gray-800 dark:text-gray-100 text-center mb-6">
+    <div className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-10">
+      <h3 className="text-xl font-medium text-gray-800 text-center mb-6">
         Backend Developer
       </h3>
 
@@ -85,9 +85,9 @@ const SkillItem = ({ name, level }) => {
 
   return (
     <div className="flex items-center gap-3">
-      <i className="bx bx-badge-check text-xl text-gray-700 dark:text-gray-300"></i>
+      <i className="bx bx-badge-check text-xl text-gray-700"></i>
       <div>
-        <h4 className="text-base font-medium text-gray-700 dark:text-gray-300">
+        <h4 className="text-base font-medium text-gray-700">
           {name}
         </h4>
         <span className={`text-xs ${getLevelColor(level)}`}>{level}</span>

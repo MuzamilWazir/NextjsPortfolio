@@ -7,10 +7,10 @@ const About = () => {
       className="pt-24 pb-12 md:pt-28 md:pb-16 lg:pt-32 lg:pb-20"
       id="about"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 text-center mb-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-2">
         About Me
       </h2>
-      <span className="text-base text-gray-600 dark:text-gray-300 text-center block mb-12">
+      <span className="text-base text-gray-600 text-center block mb-12">
         My introduction
       </span>
 
@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div className="lg:text-left text-center">
           <Info />
-          <p className="text-gray-600 dark:text-gray-300 text-lg mb-8 lg:mb-10 lg:pr-8">
+          <p className="text-gray-600 text-lg mb-8 lg:mb-10 lg:pr-8">
             I'm a passionate Software Engineer with a growing interest in MERN
             stack development. Currently exploring the world of full-stack web
             applications, I'm eager to learn, build, and grow as a developer one

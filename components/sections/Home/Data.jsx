@@ -3,7 +3,7 @@ import React from "react";
 const Data = () => {
   return (
     <div className="lg:col-span-3 lg:order-3 order-3">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 mb-2">
         Wazir Muzammil
         <svg
           width="38"
@@ -55,11 +55,11 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-normal mb-6 relative pl-20 md:pl-24">
+      <h3 className="text-xl md:text-2xl text-gray-600 font-normal mb-6 relative pl-20 md:pl-24">
         <span className="absolute left-0 top-1/2 w-16 md:w-20 h-0.5 bg-gray-400 transform -translate-y-1/2"></span>
         MERN Stack Developer
       </h3>
-      <p className="max-w-2xl text-lg text-gray-600 dark:text-gray-300 mb-10 md:mb-12">
+      <p className="max-w-2xl text-lg text-gray-600 mb-10 md:mb-12">
         I'm a passionate Software Engineer with a growing interest in MERN stack
         development. Currently exploring the world of full-stack web
         applications.

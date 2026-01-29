@@ -48,7 +48,7 @@ function Testimonial() {
       <h2 className="text-center text-3xl md:text-4xl font-semibold mb-2">
         My Clients Say
       </h2>
-      <span className="block text-center text-sm text-gray-600 dark:text-gray-400 mb-16">
+      <span className="block text-center text-sm text-gray-600 mb-16">
         Testimonial
       </span>
 
@@ -75,7 +75,7 @@ function Testimonial() {
           {Data.map(({ id, image, title, role, description }) => {
             return (
               <SwiperSlide key={id}>
-                <div className="bg-white dark:bg-gray-900 border border-black/10 dark:border-gray-700 p-6 md:p-8 rounded-3xl mb-12">
+                <div className="bg-white border border-black/10 p-6 md:p-8 rounded-3xl mb-12">
                   <img
                     src={image}
                     alt={title}
@@ -83,10 +83,10 @@ function Testimonial() {
                   />
 
                   <h3 className="text-base font-medium mb-1">{title}</h3>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">
+                  <p className="text-xs text-gray-500 mb-3">
                     {role}
                   </p>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="text-sm text-gray-700 leading-relaxed">
                     {description}
                   </p>
                 </div>
@@ -103,11 +103,7 @@ function Testimonial() {
         .swiper-pagination-bullet-active {
           background-color: #1f2937 !important;
         }
-        @media (prefers-color-scheme: dark) {
-          .swiper-pagination-bullet-active {
-            background-color: #ffffff !important;
-          }
-        }
+
       `}</style>
     </section>
   );

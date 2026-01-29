@@ -100,8 +100,8 @@ function Projects() {
       description:
         "It is goverment webiste where people can add and remove their product and register in rwanda country",
       image: "/madeinrwanda.png",
-      link: "https://github.com/MuzamilWazir/madeinrewandawebsitefrontend",
-      github: "https://github.com/mehditechnologies/top-ai-tools-hub",
+      link: "https://madeinrewandawebsitefrontend.vercel.app/",
+      github: "https://github.com/MuzamilWazir/madeinrewandawebsitefrontend",
       tags: [
         "Next.js",
         "React",
@@ -115,7 +115,7 @@ function Projects() {
       <h2 className="text-center text-3xl md:text-4xl font-semibold mb-2">
         Projects
       </h2>
-      <span className="block text-center text-sm text-gray-600 dark:text-gray-400 mb-16">
+      <span className="block text-center text-sm text-gray-600 mb-16">
         My Projects usibg my skills
       </span>
 
@@ -123,9 +123,9 @@ function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="group bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            className="group bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
           >
-            <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-900">
+            <div className="relative h-48 overflow-hidden bg-gray-100">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -135,11 +135,11 @@ function Projects() {
             </div>
 
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {project.title}
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 {project.description}
               </p>
 
@@ -147,7 +147,7 @@ function Projects() {
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full"
+                    className="px-3 py-1 text-xs font-medium bg-blue-50 text-blue-600 rounded-full"
                   >
                     {tag}
                   </span>
@@ -159,7 +159,7 @@ function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                  className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
                 >
                   View Project
                   <svg
@@ -182,7 +182,7 @@ function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors"
+                    className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                     aria-label="View source code on GitHub"
                   >
                     <svg
