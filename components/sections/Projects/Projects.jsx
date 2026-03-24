@@ -108,6 +108,24 @@ function Projects() {
         "Tailwind CSS",
       ],
     },
+    {
+      id: 7,
+      title: "Seal DApp - Encrypted Messaging on Sui Blockchain",
+      description:
+        "A decentralized application for encrypted messaging built on the Sui blockchain, ensuring secure and private communication.",
+      image: "/seal-dapp.png",
+      link: "https://seal-testnet-dapp.vercel.app/",
+      github: "https://github.com/MuzamilWazir/Seal-Testnet-DAPP",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Sui Blockchain",
+        "DApp",
+        "Encrypted Messaging",
+        "SEAL",
+      ],
+    },
   ];
 
   return (
