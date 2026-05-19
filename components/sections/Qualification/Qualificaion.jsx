@@ -106,7 +106,7 @@ const Qualification = () => {
             <div className="grid grid-cols-[1fr_max-content_1fr] gap-x-2 md:gap-x-6">
               <div className="pb-12">
                 <h3 className="text-base font-medium">
-                  MERN Stack Developer Intern
+                  MERN Stack Developer 
                 </h3>
                 <span className="inline-block text-sm mb-4">
                   CodeCrafters Hub, Lahore Pakistan
@@ -131,7 +131,7 @@ const Qualification = () => {
               </div>
               <div className="pb-12 col-span-2 md:col-span-1 md:col-start-3">
                 <h3 className="text-base font-medium">
-                  Software Developer Intern
+                  Software Developer 
                 </h3>
                 <span className="inline-block text-sm mb-4">
                   NTC National Telecommunication Corporation, Islamabad G5-2
