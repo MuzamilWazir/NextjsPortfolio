@@ -9,7 +9,7 @@ const Info = () => {
           Experience
         </h3>
         <span className="text-xs text-gray-600">
-          6 month Experience
+          1+ Year Experience
         </span>
       </div>
       <div className="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm">
@@ -18,7 +18,7 @@ const Info = () => {
           Complete
         </h3>
         <span className="text-xs text-gray-600">
-          4+ projects
+          10+ projects
         </span>
       </div>
       <div className="bg-white border border-gray-200 rounded-xl p-6 text-center shadow-sm">
