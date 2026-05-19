@@ -5,6 +5,9 @@
 🔗 **Live Site:** [nextjs-portfolio-psi-brown.vercel.app](https://nextjs-portfolio-psi-brown.vercel.app/)
 
 ---
+## 📸 Preview
+
+![Portfolio Screenshot](Screenshot%20From%202026-05-19%2015-53-28.png)
 
 ## 🦸 Hero Section
 
