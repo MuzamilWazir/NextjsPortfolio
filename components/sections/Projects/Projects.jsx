@@ -131,7 +131,7 @@ function Projects() {
       title: "Prepistan - Get you compitative exams pass",
       description:
         "A application where individual can study and atempt mcqs and prepare for the compitative exams.",
-      image: "/prepistan.png",
+      image: "/prepistanImage.png",
       link: "https://prepistan.vercel.app/",
       github: "https://github.com/MuzamilWazir/Prepistan",
       tags: [
