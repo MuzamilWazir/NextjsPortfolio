@@ -81,7 +81,7 @@ function Projects() {
       description:
         "A curated directory of the best AI tools and resources. Features categorized listings, search functionality, tool comparisons, and detailed descriptions to help users discover and explore cutting-edge AI solutions for various needs.",
       image: "/aitool.png",
-      link: "https://top-ai-tools-hub.vercel.app/",
+      link: "https://top-ai-tool-hub-64mb.vercel.app/",
       github: "https://github.com/mehditechnologies/top-ai-tools-hub",
       tags: [
         "Next.js",
