@@ -104,6 +104,31 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
 
+## 🔍 SEO
+
+All SEO metadata lives in `lib/site.ts` and `lib/projects.ts` — edit those to update
+titles, keywords, social links and project data everywhere at once.
+
+| File | Purpose |
+|------|---------|
+| `lib/site.ts` | Site URL, name, description, keywords, socials, image config |
+| `app/layout.tsx` | Open Graph, Twitter Card, canonical, robots, viewport |
+| `app/sitemap.ts` | `/sitemap.xml` |
+| `app/robots.ts` | `/robots.txt` (points to the sitemap) |
+| `app/manifest.ts` | `/manifest.webmanifest` (PWA) |
+| `components/Seo/StructuredData.jsx` | JSON-LD: Person, WebSite, ProfilePage, ItemList of projects |
+
+Set your production URL in `.env.local` (and in Vercel → Settings → Environment
+Variables) so canonical URLs and OG image links are absolute:
+
+```bash
+NEXT_PUBLIC_SITE_URL="https://your-domain.com"
+```
+
+The OG image lives at `public/ogimage.png` (recommended 1200×630).
+
+---
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).

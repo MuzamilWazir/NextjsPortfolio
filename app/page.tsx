@@ -13,14 +13,16 @@ const page = () => {
   return (
     <div>
       <Navbar />
-      <Home />
-      <About />
-      <Skill />
-      <Projects />
-      <Services />
-      <Qualification />
-      <Testimonial />
-      <Contact />
+      <main>
+        <Home />
+        <About />
+        <Skill />
+        <Projects />
+        <Services />
+        <Qualification />
+        <Testimonial />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
