@@ -17,20 +17,24 @@ function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="group bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            className="group relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
           >
             <div className="relative h-48 overflow-hidden bg-gray-100">
               <Image
                 src={project.image}
                 alt={project.imageAlt}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
 
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                <Link href={`/projects/${project.slug}`} className="hover:text-blue-600 transition-colors">
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="hover:text-blue-600 transition-colors after:absolute after:inset-0 after:content-['']"
+                >
                   {project.shortTitle}
                 </Link>
               </h3>
@@ -50,32 +54,12 @@ function Projects() {
                 ))}
               </div>
 
-              <Link
-                href={`/projects/${project.slug}`}
-                className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-blue-600 transition-colors mb-3"
-              >
-                Read case study
-                <svg
-                  className="ml-2 w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </Link>
-
               <div className="flex items-center justify-between gap-3">
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
+                  className="relative z-10 inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
                 >
                   View Project
                   <svg
@@ -98,8 +82,8 @@ function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
-                    aria-label="View source code on GitHub"
+                    className="relative z-10 inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                    aria-label={`View ${project.shortTitle} source code on GitHub`}
                   >
                     <svg
                       className="w-5 h-5"
