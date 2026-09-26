@@ -2,7 +2,7 @@
 
 > A modern, responsive portfolio website built with **Next.js**, **React**, and **Tailwind CSS** — showcasing projects, skills, and services as a MERN Stack Developer.
 
-🔗 **Live Site:** [nextjs-portfolio-psi-brown.vercel.app](https://nextjs-portfolio-psi-brown.vercel.app/)
+🔗 **Live Site:** [nextjs-portfolio-psi-brown.vercel.app](https://themuzammilwazir.vercel.app/)
 
 ---
 ## 📸 Preview
