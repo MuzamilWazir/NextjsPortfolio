@@ -112,20 +112,52 @@ titles, keywords, social links and project data everywhere at once.
 | File | Purpose |
 |------|---------|
 | `lib/site.ts` | Site URL, name, description, keywords, socials, image config |
-| `app/layout.tsx` | Open Graph, Twitter Card, canonical, robots, viewport |
-| `app/sitemap.ts` | `/sitemap.xml` |
-| `app/robots.ts` | `/robots.txt` (points to the sitemap) |
+| `app/layout.tsx` | Open Graph, Twitter Card, robots, viewport, default title/description |
+| `app/page.tsx` | Canonical for the homepage |
+| `app/projects/[slug]/page.tsx` | Per-project case study page + its own canonical, OG tags and JSON-LD |
+| `app/sitemap.ts` | `/sitemap.xml` — homepage + all 8 project pages |
+| `app/robots.ts` | `/robots.txt` (allow all, `Disallow: /api/`, points to the sitemap) |
 | `app/manifest.ts` | `/manifest.webmanifest` (PWA) |
-| `components/Seo/StructuredData.jsx` | JSON-LD: Person, WebSite, ProfilePage, ItemList of projects |
+| `components/Seo/StructuredData.jsx` | JSON-LD: `Person`, `WebSite`, `ProfilePage`, `ItemList` of projects |
 
-Set your production URL in `.env.local` (and in Vercel → Settings → Environment
-Variables) so canonical URLs and OG image links are absolute:
+### Generated endpoints (after `npm run build`)
+
+| URL | What it is |
+|-----|-----------|
+| `/` | Homepage — title, description, canonical, OG + Twitter tags, 4 JSON-LD blocks |
+| `/projects/[slug]` | 8 static case study pages — 400–470 words each, own canonical + `BreadcrumbList`, `TechArticle`, `SoftwareApplication` JSON-LD |
+| `/sitemap.xml` | 9 URLs with `lastmod`, `priority` and images |
+| `/robots.txt` | Crawl rules + sitemap reference |
+| `/manifest.webmanifest` | PWA manifest |
+| `/google916570fb6fded38f.html` | Google Search Console verification file |
+
+### Project slugs
+
+`bookhaven` · `reactbase` · `ai-saas-design-automation` · `edulearn` ·
+`top-ai-tools-hub` · `made-in-rwanda` · `seal-dapp` · `prepistan`
+
+### Deployment notes
+
+Set your production URL so canonical URLs and OG image links are absolute:
 
 ```bash
-NEXT_PUBLIC_SITE_URL="https://your-domain.com"
+NEXT_PUBLIC_SITE_URL="https://themuzammilwazir.vercel.app"
 ```
 
-The OG image lives at `public/ogimage.png` (recommended 1200×630).
+Put it in `.env.local` **and** in Vercel → Settings → Environment Variables.
+
+> Never hardcode a `<link rel="canonical">` in `layout.tsx` — it will be emitted
+> alongside the Metadata API one and you end up with two conflicting canonicals.
+> Set `alternates.canonical` in the page's `metadata` export instead.
+
+The OG image lives at `public/ogimage.png` (recommended exactly 1200×630).
+
+### After deploying
+
+1. Google Search Console → **URL Prefix** → `https://themuzammilwazir.vercel.app/`
+2. Submit `https://themuzammilwazir.vercel.app/sitemap.xml` under **Sitemaps**
+3. Run **URL Inspection** → *Request indexing* on `/` and each `/projects/[slug]`
+4. Bing Webmaster Tools → import the same sitemap
 
 ---
 

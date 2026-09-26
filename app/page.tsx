@@ -1,4 +1,5 @@
 import React from "react";
+import type { Metadata } from "next";
 import Navbar from "@/components/sections/Navbar/Navbar.jsx";
 import Home from "@/components/sections/Home/Home.jsx";
 import About from "@/components/sections/About/About.jsx";
@@ -9,6 +10,13 @@ import Testimonial from "@/components/sections/Testimonial/Testimonial";
 import Contact from "@/components/sections/Contact/Contact";
 import Footer from "@/components/sections/Footer/Footer";
 import Projects from "@/components/sections/Projects/Projects.jsx";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 const page = () => {
   return (
     <div>

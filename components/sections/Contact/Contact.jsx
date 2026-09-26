@@ -65,7 +65,7 @@ const Contact = () => {
               <div className="bg-white border border-gray-200 rounded-2xl p-3 text-center">
                 <i className="bx bxl-whatsapp text-4xl text-gray-900 mb-1 block"></i>
                 <h3 className="text-base font-medium mb-1 text-gray-900">
-                  Whatapp
+                  WhatsApp
                 </h3>
                 <span className="block text-sm text-gray-600 mb-2">
                   0347-8048455

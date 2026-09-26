@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Info from "./Info";
 
 const About = () => {
@@ -16,19 +17,21 @@ const About = () => {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden justify-self-center">
-          <img
+          <Image
             src="/about.png"
-            alt="About me"
+            alt="Wazir Muzammil, MERN Stack Developer and Software Engineer"
+            width={320}
+            height={320}
             className="w-full h-full object-cover"
           />
         </div>
         <div className="lg:text-left text-center">
           <Info />
           <p className="text-gray-600 text-lg mb-8 lg:mb-10 lg:pr-8">
-            I'm a passionate Software Engineer with a growing interest in MERN
-            stack development. Currently exploring the world of full-stack web
-            applications, I'm eager to learn, build, and grow as a developer one
-            line of code at a time.
+            I&apos;m a passionate Software Engineer with a strong interest in MERN
+            stack development. I build full-stack web applications with MongoDB,
+            Express, React and Node.js, and I&apos;m eager to learn, build, and grow
+            as a developer one line of code at a time.
           </p>
           <a
             href="/Muzammil-Cv.pdf"

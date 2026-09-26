@@ -76,9 +76,11 @@ function Testimonial() {
             return (
               <SwiperSlide key={id}>
                 <div className="bg-white border border-black/10 p-6 md:p-8 rounded-3xl mb-12">
-                  <img
+                  <Image
                     src={image}
-                    alt={title}
+                    alt={`${title} - ${role}`}
+                    width={64}
+                    height={64}
                     className="w-16 h-16 rounded-full mb-4 object-cover"
                   />
 

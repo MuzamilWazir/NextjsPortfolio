@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { projects } from "@/lib/projects";
 
 function Projects() {
@@ -9,7 +10,7 @@ function Projects() {
         Projects
       </h2>
       <span className="block text-center text-sm text-gray-600 mb-16">
-        My Projects usibg my skills
+        My Projects using my skills
       </span>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -21,7 +22,7 @@ function Projects() {
             <div className="relative h-48 overflow-hidden bg-gray-100">
               <Image
                 src={project.image}
-                alt={project.title}
+                alt={project.imageAlt}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -29,7 +30,9 @@ function Projects() {
 
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                {project.title}
+                <Link href={`/projects/${project.slug}`} className="hover:text-blue-600 transition-colors">
+                  {project.shortTitle}
+                </Link>
               </h3>
 
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -46,6 +49,26 @@ function Projects() {
                   </span>
                 ))}
               </div>
+
+              <Link
+                href={`/projects/${project.slug}`}
+                className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-blue-600 transition-colors mb-3"
+              >
+                Read case study
+                <svg
+                  className="ml-2 w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </Link>
 
               <div className="flex items-center justify-between gap-3">
                 <a

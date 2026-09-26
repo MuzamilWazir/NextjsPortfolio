@@ -60,9 +60,9 @@ const Data = () => {
         MERN Stack Developer
       </h3>
       <p className="max-w-2xl text-lg text-gray-600 mb-10 md:mb-12">
-        I'm a passionate Software Engineer with a growing interest in MERN stack
-        development. Currently exploring the world of full-stack web
-        applications.
+        I&apos;m a passionate Software Engineer with a growing interest in MERN
+        stack development. Currently exploring the world of full-stack web
+        applications with React, Next.js, Node.js and MongoDB.
       </p>
       <a
         href="#contact"

@@ -77,6 +77,18 @@ const Navbar = () => {
             </li>
             <li className="flex items-center justify-center">
               <a
+                href="#projects"
+                onClick={() => setActiveNav("#projects")}
+                className={`flex flex-col items-center text-[0.875rem] text-[hsl(0,0%,20%)] font-medium transition-colors duration-300 hover:text-[hsl(0,0%,0%)] ${
+                  activeNav === "#projects" ? "text-[hsl(0,0%,0%)]" : ""
+                }`}
+              >
+                <i className="uil uil-apps text-[1.2rem] mb-1 md:hidden"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li className="flex items-center justify-center">
+              <a
                 href="#service"
                 onClick={() => setActiveNav("#service")}
                 className={`flex flex-col items-center text-[0.875rem] text-[hsl(0,0%,20%)] font-medium transition-colors duration-300 hover:text-[hsl(0,0%,0%)] ${
@@ -84,7 +96,7 @@ const Navbar = () => {
                 }`}
               >
                 <i className="uil uil-briefcase-alt text-[1.2rem] mb-1 md:hidden"></i>
-                <span>Servicse</span>
+                <span>Services</span>
               </a>
             </li>
 

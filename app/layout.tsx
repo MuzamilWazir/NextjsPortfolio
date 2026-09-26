@@ -11,7 +11,7 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const title = `${siteConfig.name} — ${siteConfig.role} Portfolio`;
+const title = siteConfig.title;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -31,9 +31,6 @@ export const metadata: Metadata = {
   publisher: siteConfig.name,
   keywords: [...siteConfig.keywords],
   category: "technology",
-  alternates: {
-    canonical: "/",
-  },
   icons: {
     apple: [{ url: "/favicon.ico" }],
   },
@@ -114,8 +111,6 @@ export default function RootLayout({
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
           rel="stylesheet"
         />
-        <link rel="canonical" href="https://themuzammilwazir.vercel.app/" />
-
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <StructuredData />
       </head>
