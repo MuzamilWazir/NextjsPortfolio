@@ -114,6 +114,8 @@ export default function RootLayout({
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
           rel="stylesheet"
         />
+        <link rel="canonical" href="https://themuzammilwazir.vercel.app/" />
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <StructuredData />
       </head>
