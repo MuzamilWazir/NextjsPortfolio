@@ -48,11 +48,11 @@ export const siteConfig = {
   },
   images: {
     og: {
-      // public/ogimage.png is 1586x779. Keep these in sync with the real file —
-      // some crawlers use the declared size, not the actual one, when cropping.
+      // public/ogimage.png is exactly 1200x630 (1.91:1, the OG standard).
+      // Re-crop from the 1586x779 original if you ever replace the design.
       url: "/ogimage.png",
-      width: 1586,
-      height: 779,
+      width: 1200,
+      height: 630,
       alt: "Wazir Muzammil — MERN Stack Developer portfolio",
     },
     profile: "/profile-pic.png",
