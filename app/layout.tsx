@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import { siteConfig } from "@/lib/site";
 import StructuredData from "@/components/Seo/StructuredData.jsx";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -112,12 +113,14 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="icon" href="./favicon.ico" type="image/x-icon"></link>
         <StructuredData />
       </head>
       <body
         className={`${poppins.variable} font-sans bg-gray-50 text-gray-700 text-[1rem]`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
